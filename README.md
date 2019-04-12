@@ -4,7 +4,7 @@
 
 install from github into nuxt directory structure:
 
-```
+```js
 cd your-nuxt-project
 gitclone https://github.com/nuxt-upgrades/apolo-starter.git apollo
 npm i @nuxtjs/apollo
@@ -16,7 +16,7 @@ use npm package
 
 ## configuration
 
-```	
+```js
 /*
 ** Nuxt.js modules
 */
@@ -39,7 +39,7 @@ apollo: {
 
 to render posts query as {{posts}}, 
 add for example to pages/index.vue script:
-```
+```js
 import Posts from '~/apollo/gql/posts.gql';
 export default {
 	apollo: {
