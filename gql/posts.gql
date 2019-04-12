@@ -1,0 +1,14 @@
+query Post(
+  $limit:Int
+  $posttype:String
+  ){
+  posts(
+    post_type: [$posttype], 
+    limit: $limit
+    )
+    {
+      id
+      post_title
+      post_author
+    }
+}

@@ -17,22 +17,22 @@ use npm package
 ## configuration
 
 ```	
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    '@nuxtjs/apollo',
-  ],
-  /*
-  ** Apollo module options
-  */
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: 'http://localhost:4000',
-      },
-    }
-  },
+/*
+** Nuxt.js modules
+*/
+modules: [
+	'@nuxtjs/apollo',
+],
+/*
+** Apollo module options
+*/
+apollo: {
+	clientConfigs: {
+		default: {
+			httpEndpoint: 'http://localhost:4000',
+		},
+	}
+},
 ```
 
 ## example
@@ -44,7 +44,7 @@ export default {
 	apollo: {
 		posts: {
 			query: PostsByTaxWithMetas
-    	}
+		}
 	}
 }
 ```
