@@ -1,0 +1,7 @@
+{
+	"name": "@dadmor/apollo-starter",
+	"version": "0.0.2",
+	"description": "create connector with apollo-server",
+	"license": "MIT",
+	"repository": "nuxt-upgrades/apolo-starter"
+}
