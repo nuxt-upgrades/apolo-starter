@@ -37,13 +37,35 @@ apollo: {
 
 ## example
 
-to render {{posts}} query add to pages/index.vue script:
+to render posts query as {{posts}}, 
+add for example to pages/index.vue script:
 ```
-import PostsByTaxWithMetas from '~/apollo/gql/postsByTaxWithMetas.gql';
+import Posts from '~/apollo/gql/posts.gql';
 export default {
 	apollo: {
-		posts: {
-			query: PostsByTaxWithMetas
+    	posts: {
+			variables:{
+				limit:10,
+				posttype:'post'
+			},
+			query: Posts
+		}
+	}
+}
+```
+
+to render posts query filter by terms as {{terms}}, 
+add for example to pages/index.vue script:
+```
+import Posts from '~/apollo/gql/postsByTaxWithMetas.gql';
+export default {
+	apollo: {
+    	terms: {
+			variables:{
+				/* example exist terms id as commas list */
+				taxonomies: '33'
+			},
+			query: Posts
 		}
 	}
 }
