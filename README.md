@@ -25,7 +25,6 @@ use npm package
   // Give apollo module options
   apollo: {
     clientConfigs: {
-      // default: '~/apollo/network-interfaces/default.js',
       default: {
         httpEndpoint: 'http://localhost:4000',
       },
