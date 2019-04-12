@@ -7,6 +7,7 @@ query Terms(
   {
     id
     post_title
+    post_author
     post_meta {
       meta_id
       meta_key
