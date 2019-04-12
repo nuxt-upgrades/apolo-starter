@@ -1,3 +1,4 @@
+/*
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
@@ -13,5 +14,11 @@ export default (ctx) => {
     uri: httpEndpoint,
     cache: new InMemoryCache(),
     dataIdFromObject: o => o.id
+  }
+}
+*/
+export default (ctx) => {
+  return {
+    httpEndpoint: 'http://localhost:4000'
   }
 }
