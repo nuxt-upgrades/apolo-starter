@@ -8,6 +8,7 @@ query Post(
     )
     {
       id
+      post_name
       post_title
       post_date
       post_status
